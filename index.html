@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html dir="rtl">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_top">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #007bff;
+        }
+
+
+        .placeholder {
+            display: block;
+            width: 45%;
+            height: calc(100vh - 200px); /* Increased height */
+            background-color: #4a4a4a;
+            background-image: url("back.jpg");
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            margin-bottom: auto;
+            border: 3px solid var(--primary-color);
+            object-fit: contain;
+            box-shadow: 0 20px 30px rgba(0, 123, 255, 0.3);
+            transition: 0.5s;
+        }
+        .placeholder:hover {
+        box-shadow: 0 60px 70px rgba(0, 123, 255, 0.3);
+      }
+        .placeholder select{
+            margin: 2rem 0;
+            padding: 1rem 2.5rem;
+            align-items: center;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            border: 2px solid var(--primary-color);
+            background: white;
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: fadeIn 1s ease;
+            width: 300px;
+            text-align: center;
+            outline: none;
+            margin-top: -15px; /* Moved up by 15px */
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("");
+            background-position: right 1rem center;
+            background-size: 1.5em;
+            padding-right: 3rem;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+        .placeholder select:hover{
+        transform: scale(1.02);
+        box-shadow: 0 30px 40px rgba(0, 123, 255, 0.3);
+      }
+      .view{
+            margin: 2rem 0;
+            padding: 1rem 2.5rem;
+            align-items: center;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            border: 2px solid var(--primary-color);
+            background: white;
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: fadeIn 1s ease;
+            width: 300px;
+            text-align: center;
+            outline: none;
+            margin-top: -15px; /* Moved up by 15px */
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("");
+            background-position: right 1rem center;
+            background-size: 1.5em;
+            padding-right: 3rem;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+        .view:hover {
+        transform: scale(1.02);
+        box-shadow: 0 30px 40px rgba(0, 123, 255, 0.3);
+      }
+      .code{
+            margin: 2rem 0;
+            padding: 1rem 2.5rem;
+            align-items: center;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            border: 2px solid var(--primary-color);
+            background: white;
+            color: var(--primary-color);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: fadeIn 1s ease;
+            width: 350px;
+            text-align: center;
+            outline: none;
+            margin-top: -15px; /* Moved up by 15px */
+            appearance: none;
+            -webkit-appearance: none;
+            background-image: url("");
+            background-position: right 1rem center;
+            background-size: 1.5em;
+            padding-right: 3rem;
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+        .code:hover {
+        transform: scale(1.02);
+        box-shadow: 0 30px 40px rgba(0, 123, 255, 0.3);
+      }
+        .heading{
+          margin-top: 5%;
+          margin-left: auto;
+          margin-right: auto;
+          color: #ffffff;
+          background-color: #007bff;
+          width: 43%;
+          height: 15%;
+          text-align: center;
+          font-size: 25px;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+          box-shadow: 0 20px 30px rgba(38, 110, 236, 0.809);
+          font-family: system-ui;
+          transition: 0.5s;
+        }
+        .developers{
+          color: ffffff#;
+          font-weight: 500;
+          
+          font-family: system-ui;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="heading">Monthly Marks</div>
+    <div class="placeholder">
+        <div class="developers"></div>
+      
+        <?var url = getUrl();?>
+        <form method="post" action="<?= url ?>">
+        <select name='cl' required>
+        <option value="">Select Your Grade</option>
+        <option value="M1">Middle One</option>
+        <option value="M2">Middle Two</option>
+        </select>
+    
+
+        </td>
+        </tr>
+
+        <tr>
+          <td>
+            <center>
+              <input class="code" style="color: #007bff;" type="text" name="rl" placeholder=" Enter Your Code " required>
+            
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <center>
+              <input class="view" type="submit" value="View" name="Submit">
+              </form>
+          </td>
+        </tr>
+        <hr>
+        <hr>
+        <hr>
+        <tr>
+          <td>
+            <center>
+              <div class="developers">Developed by Youssef Zidan <br><br> Supervisor Mr.Hassan Magdy </div>
+          </td>
+        </tr>
+        
+        <hr>
+        <hr>
+        <hr>
+        <tr>
+
+        </table>
+        <br><br>
+    </div>
+</body>
+</html>
+colo
